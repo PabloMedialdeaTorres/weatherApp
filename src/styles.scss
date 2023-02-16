@@ -36,7 +36,7 @@ body{
     align-items: center;
 }
 .container{
-    width: 300px;
+    width: 400px;
     height: 80vh;
     background-color: var(--blue-2);
     border-radius: 20px;
@@ -190,12 +190,12 @@ body{
 }
 .info-block-label span{
     color: var(--white-1);
-    font-size: 0.7em;
+    font-size: 0.9em;
     
 }
 .info-block-value{
     color: var(--white-1);
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -220,5 +220,5 @@ body{
     
 }
 .mat-icon{
-    font-size: 1.2em;
+    font-size: 1.5em;
 }

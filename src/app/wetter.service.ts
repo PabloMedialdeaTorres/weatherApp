@@ -28,7 +28,7 @@ export class WetterService {
    * @returns Koordinaten Coord
   */
   private getCityCoordinates(stadt: string): Promise<Coord> {
-    return firstValueFrom(this.httpClient.get<Coord[]>(`${'http://api.openweathermap.org/geo/1.0'}/direct`, {
+    return firstValueFrom(this.httpClient.get<Coord[]>(`${'https://api.openweathermap.org/geo/1.0'}/direct`, {
       params: new HttpParams()
       .set('q', stadt)
       .set('appid', 'ccd61719dbe88ed6e540b08868d65e99')
