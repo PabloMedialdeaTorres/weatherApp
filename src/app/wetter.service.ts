@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
-import { environment } from '../environments/environment';
+// import { environment } from '../environments/environment';
 import { Coord, WetterData } from './wetter-interface';
 
 @Injectable({

@@ -3,12 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: true,
-  wetterApiUrl: 'https://api.openweathermap.org/data/2.5',
-  wetterAppId: 'ccd61719dbe88ed6e540b08868d65e99',
+  production: false,
+  // wetterApiUrl: 'https://api.openweathermap.org/data/2.5',
+  // wetterAppId: 'ccd61719dbe88ed6e540b08868d65e99',
 
-  geoCodingApiUrl: 'http://api.openweathermap.org/geo/1.0',
-  GeoCodingAppId: 'ccd61719dbe88ed6e540b08868d65e99'
+  // geoCodingApiUrl: 'http://api.openweathermap.org/geo/1.0',
+  // GeoCodingAppId: 'ccd61719dbe88ed6e540b08868d65e99'
 
 };
 
