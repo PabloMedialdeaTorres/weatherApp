@@ -15,12 +15,12 @@ export class WetterService {
   async getWetterData(stadt: string) : Promise<WetterData>{
     const coordinates: Coord = await this.getCityCoordinates(stadt);
     console.log(coordinates);
-    return firstValueFrom(this.httpClient.get<WetterData>(`${environment.wetterApiUrl}/forecast`, {
+    return firstValueFrom(this.httpClient.get<WetterData>(`${'https://api.openweathermap.org/data/2.5'}/forecast`, {
       params: new HttpParams()
       .set('lat', coordinates.lat)
       .set('lon', coordinates.lon)
       .set('units', 'metric')
-      .set('appid', environment.wetterAppId)
+      .set('appid', 'ccd61719dbe88ed6e540b08868d65e99')
     }));
   }
 
@@ -28,10 +28,10 @@ export class WetterService {
    * @returns Koordinaten Coord
   */
   private getCityCoordinates(stadt: string): Promise<Coord> {
-    return firstValueFrom(this.httpClient.get<Coord[]>(`${environment.geoCodingApiUrl}/direct`, {
+    return firstValueFrom(this.httpClient.get<Coord[]>(`${'http://api.openweathermap.org/geo/1.0'}/direct`, {
       params: new HttpParams()
       .set('q', stadt)
-      .set('appid', environment.GeoCodingAppId)
+      .set('appid', 'ccd61719dbe88ed6e540b08868d65e99')
     })).then(res => res[0]);
   }
 
