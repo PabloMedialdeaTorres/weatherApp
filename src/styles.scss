@@ -26,7 +26,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--blue-1);
 
@@ -36,30 +36,30 @@ body{
     align-items: center;
 }
 .container{
-    width: 500px;
-    height: 80vh;
+    width: 96vw;
+    height: 96vh;
     background-color: var(--blue-2);
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark) ;
 
 }
 .containerDesert{
-    width: 500px;
-    height: 80vh;
+    width: 96vw;
+    height: 96vh;
     background-color: var(--black-1);
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark) ;
 }
 .containerDesertNew{
-    width: 500px;
-    height: 80vh;
+    width: 96vw;
+    height: 96vh;
     background-color: var(--desert-new);
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark) ;
 }
 .containerBeach{
-    width: 500px;
-    height: 80vh;
+    width: 96vw;
+    height: 96vh;
     background-color: var(--beach-water);
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark) ;
