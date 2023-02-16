@@ -1,1 +1,224 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --blue-1: #00718b;
+    --blue-2: #002e3a;
+    --yellow-1: #fff36a;
+    --white-1: #ffffff;
+    --grey-1: #bdbcbc;
+    --black-1: #000000;
+    --beach-sand: #deccb5fb;
+    --beach-water: #3e8b9a;
+    --desert-new: #a15346;
+    --shadow-dark: rgba(0,0,0,0.3);
+    --shadow-dark-2: rgba(0,0,0,0.6);
+    --shadow-white: rgba(255, 255, 255, 0.11);
+    --shadow-light: rgba(255,255,255,0.2);
+    --shadow-light-info: rgba(255,255,255,0.3);
+    --shadow-desert: rgba(254,93,99,0.4);
+    --shadow-beach: rgba(222, 204, 181, 0.6);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-1);
+
+    display: grid;
+   
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height: 80vh;
+    background-color: var(--blue-2);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px var(--shadow-dark) ;
+
+}
+.containerDesert{
+    width: 300px;
+    height: 80vh;
+    background-color: var(--black-1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px var(--shadow-dark) ;
+}
+.containerDesertNew{
+    width: 300px;
+    height: 80vh;
+    background-color: var(--desert-new);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px var(--shadow-dark) ;
+}
+.containerBeach{
+    width: 300px;
+    height: 80vh;
+    background-color: var(--beach-water);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px var(--shadow-dark) ;
+}
+.upper-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.lower-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
+    display: grid;
+    
+}
+
+.upper-data img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    
+}
+
+.wetter-data{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shadow-dark);
+    display: grid;
+    
+    color: var(--white-1);
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    font-family:  "Courier New";
+
+}
+.location{
+    align-self: start;
+    text-align: center;
+    font-size: 1.2em;
+}
+.temperature{
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
+    
+}
+
+.moreInfoContainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(rgba(0,108,134,0.3),rgba(207,226,197,0.5));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px var(--shadow-dark-2);
+    align-items: center;
+    
+}
+// .moreInfoContainerDesert{
+//     position: relative;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     background: linear-gradient(rgba(255,42,90,0.3),rgba(255,227,161,0.5));
+//     border-bottom-left-radius: 20px;
+//     border-bottom-right-radius: 20px;
+//     border-radius: 20px;
+//     box-shadow: 5px 5px 5px var(--shadow-white);
+//     align-items: center;
+// }
+.moreInfoContainerDesertNew{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(rgba(112, 178, 177, 0.623),rgba(222, 235, 207, 0.498));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--shadow-dark);
+    align-items: center;
+}
+.moreInfoContainerBeach{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(rgba(245,232,216,0.45),rgba(90,199,220,0.45));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--shadow-dark);
+    align-items: center;
+}
+.info-block{
+    
+    justify-content: center;
+    text-align: center;
+}
+
+.infoBlockLabelIcon {
+    color: #9abdc5;
+    text-align: center;
+
+}
+.infoBlockLabelIconDesert {
+    color: #accdb8;
+    text-align: center;
+
+}
+.infoBlockLabelIconBeach {
+    color: #deccb5d1;
+    text-align: center;
+
+}
+.info-block-label span{
+    color: var(--white-1);
+    font-size: 0.7em;
+    
+}
+.info-block-value{
+    color: var(--white-1);
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.suche{
+    margin-top: 1em;
+    text-align: center;
+}
+.suche input{
+    background-color: var(--shadow-light);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: #ffffff;
+    font-size: 0.8em;
+    text-align: center;
+}
+::placeholder{
+    color: var(--black-1);
+    //text-shadow: 0.5px 0.5px 0.5px rgb(30, 30, 30);
+    font-family:  "Courier New";
+    
+}
+.mat-icon{
+    font-size: 1.2em;
+}
