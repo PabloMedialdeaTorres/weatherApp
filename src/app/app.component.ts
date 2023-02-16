@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     if(this.stadt == "")
     {
-      this.stadt = "Granada"
+      this.stadt = "karlsruhe"
     }
     this.getWetterData(this.stadt);
     this.stadtDisplay = this.stadt;
