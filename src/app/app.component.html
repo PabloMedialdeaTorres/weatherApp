@@ -55,7 +55,7 @@
           &nbsp;{{ minTemperature | number : "1.0-0" }}°
         </div>
       </div>
-      <div class="info-block">
+      <div class="info-block2">
         <div class="info-block-label">
           <div
             [ngClass]="{
@@ -69,10 +69,10 @@
           <span>max</span>
         </div>
         <div class="info-block-value">
-          &nbsp;{{ maxTemperature | number : "1.0-0" }}°
+          {{ maxTemperature | number : "1.0-0" }}°
         </div>
       </div>
-      <div class="info-block">
+      <div class="info-block3">
         <div class="info-block-label">
           <div
             [ngClass]="{
@@ -87,7 +87,7 @@
         </div>
         <div class="info-block-value">{{ windSpeed }}km/h</div>
       </div>
-      <div class="info-block">
+      <div class="info-block4">
         <div class="info-block-label">
           <div
             [ngClass]="{
@@ -101,6 +101,64 @@
           <span>humidity</span>
         </div>
         <div class="info-block-value">{{ humidity }}%</div>
+      </div>
+      <div class="info-block5">
+        <div class="day1">
+          <div
+            [ngClass]="{
+              infoBlockLabelIcon: temperature < 15,
+              infoBlockLabelIconDesert: temperature > 24,
+              infoBlockLabelIconBeach: temperature >= 15 && temperature <= 24
+            }"
+          >
+            <mat-icon *ngIf="day1 == 'Clouds'">clouds</mat-icon>
+            <mat-icon *ngIf="day1 == 'Rain'">thunderstorm</mat-icon>
+            <mat-icon *ngIf="day1 == 'Clear'">sunny</mat-icon>
+          </div>
+          <span>+1 day</span>
+        </div>
+        <div class="day2">
+          <div
+            [ngClass]="{
+              infoBlockLabelIcon: temperature < 15,
+              infoBlockLabelIconDesert: temperature > 24,
+              infoBlockLabelIconBeach: temperature >= 15 && temperature <= 24
+            }"
+          >
+            <mat-icon *ngIf="day2 == 'Clouds'">clouds</mat-icon>
+            <mat-icon *ngIf="day2 == 'Rain'">thunderstorm</mat-icon>
+            <mat-icon *ngIf="day2 == 'Clear'">sunny</mat-icon>
+          </div>
+          <span>+2 day</span>
+        </div>
+        <div class="day3">
+          <div
+            [ngClass]="{
+              infoBlockLabelIcon: temperature < 15,
+              infoBlockLabelIconDesert: temperature > 24,
+              infoBlockLabelIconBeach: temperature >= 15 && temperature <= 24
+            }"
+          >
+            <mat-icon *ngIf="day3 == 'Clouds'">clouds</mat-icon>
+            <mat-icon *ngIf="day3 == 'Rain'">thunderstorm</mat-icon>
+            <mat-icon *ngIf="day3 == 'Clear'">sunny</mat-icon>
+          </div>
+          <span>+3 day</span>
+        </div>
+        <div class="day4">
+          <div
+            [ngClass]="{
+              infoBlockLabelIcon: temperature < 15,
+              infoBlockLabelIconDesert: temperature > 24,
+              infoBlockLabelIconBeach: temperature >= 15 && temperature <= 24
+            }"
+          >
+            <mat-icon *ngIf="day4 == 'Clouds'">clouds</mat-icon>
+            <mat-icon *ngIf="day4 == 'Rain'">thunderstorm</mat-icon>
+            <mat-icon *ngIf="day4 == 'Clear'">sunny</mat-icon>
+          </div>
+          <span>+4 day</span>
+        </div>
       </div>
     </div>
   </div>

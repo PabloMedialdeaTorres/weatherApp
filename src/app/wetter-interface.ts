@@ -1,6 +1,6 @@
 export interface WetterData {
     list: List[]
-    city: City
+    
   }
   
   export interface Coord {
@@ -11,6 +11,7 @@ export interface WetterData {
     dt: number
     main: Main
     wind: Wind
+    weather: Weather[]
     visibility: number
     pop: number
     dt_txt: string
@@ -33,15 +34,11 @@ export interface WetterData {
     deg: number
     gust: number
   }
-  export interface City {
+  export interface Weather {
     id: number
-    name: string
-    coord: Coord
-    country: string
-    population: number
-    timezone: number
-    sunrise: number
-    sunset: number
+    main: string
+    description: string
+    icon: string
   }
   
  
